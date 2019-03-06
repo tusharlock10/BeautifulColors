@@ -73,13 +73,6 @@ while run:
     pygame.draw.circle(screen,COLOR,[x,y],r)
 
     pygame.display.flip()
-    Clock.tick()
+    Clock.tick(60)
     
-xx=0
-while True:
-    xx+=1
-    #screen.fill(BG_COLOR)
-    if t+1<time.time():
-        print("FPS: ",xx)
-        break
 pygame.quit()
